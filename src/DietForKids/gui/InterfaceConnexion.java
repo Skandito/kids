@@ -9,7 +9,7 @@
  * Created on 15 févr. 2014, 16:03:13
  */
 
-package diet_for_kids.gui;
+package DietForKids.gui;
 
 import DietForKids.gui.Acceuil;
 import java.awt.Container;
@@ -179,10 +179,7 @@ public class InterfaceConnexion extends javax.swing.JFrame implements ActionList
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 
-    private void revalidate() {
-        throw new UnsupportedOperationException("Not yet implemented");
-    }
-
+    
     public void actionPerformed(ActionEvent e) {
   
     }
