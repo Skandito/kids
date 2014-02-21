@@ -15,10 +15,10 @@ package DietForKids.gui;
  *
  * @author Ali
  */
-public class Acceuil extends javax.swing.JFrame {
+public class Admin_Acceuil extends javax.swing.JFrame {
 
     /** Creates new form Acceuil */
-    public Acceuil() {
+    public Admin_Acceuil() {
         initComponents();
     }
 
@@ -182,9 +182,10 @@ public class Acceuil extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel7)
-                        .addComponent(jLabel8)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8))))
                 .addGap(237, 237, 237)
                 .addComponent(jLabel2)
                 .addContainerGap())
@@ -198,7 +199,7 @@ public class Acceuil extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 509, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
         );
 
         pack();
@@ -210,7 +211,7 @@ public class Acceuil extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Acceuil().setVisible(true);
+                new Admin_Acceuil().setVisible(true);
             }
         });
     }

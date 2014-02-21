@@ -11,7 +11,7 @@
 
 package DietForKids.gui;
 
-import DietForKids.gui.Acceuil;
+import DietForKids.gui.Admin_Acceuil;
 import java.awt.Container;
 import java.awt.Panel;
 import java.awt.event.ActionEvent;
@@ -22,11 +22,11 @@ import javax.swing.JFrame;
  *
  * @author Ali
  */
-public class InterfaceConnexion extends javax.swing.JFrame implements ActionListener {
+public class Admin_InterfaceConnexion extends javax.swing.JFrame implements ActionListener {
     private Container NewJPaneltest;
 
     /** Creates new form InterfaceConnexion */
-    public InterfaceConnexion() {
+    public Admin_InterfaceConnexion() {
         initComponents();
     }
 
@@ -149,7 +149,7 @@ public class InterfaceConnexion extends javax.swing.JFrame implements ActionList
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         setVisible(false);
-        Acceuil acc = new Acceuil();
+        Admin_Acceuil acc = new Admin_Acceuil();
         acc.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -163,7 +163,7 @@ public class InterfaceConnexion extends javax.swing.JFrame implements ActionList
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new InterfaceConnexion().setVisible(true);
+                new Admin_InterfaceConnexion().setVisible(true);
             }
         });
     }
