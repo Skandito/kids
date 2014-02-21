@@ -6,6 +6,17 @@
 
 package DietForKids.gui;
 
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.UIDefaults;
+import javax.swing.UIManager;
+import javax.swing.event.TableModelEvent;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Ali
@@ -15,6 +26,7 @@ public class Medecin extends javax.swing.JFrame {
     /**
      * Creates new form Medecin
      */
+    
     public Medecin() {
         initComponents();
     }
@@ -52,15 +64,30 @@ public class Medecin extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null,  new Boolean(false)},
+                {null, null, null,  new Boolean(false)},
+                {null, null, null,  new Boolean(false)},
+                {null, null, null,  new Boolean(false)}
             },
             new String [] {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
-        ));
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Boolean.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(jTable1);
 
         jButton1.setText("Supprimer");
@@ -164,6 +191,7 @@ public class Medecin extends javax.swing.JFrame {
             public void run() {
                 new Medecin().setVisible(true);
             }
+            
         });
     }
 
@@ -175,7 +203,12 @@ public class Medecin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    public javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+    public Medecin(JTable jTable1) {
+        
+    }
+
 }
