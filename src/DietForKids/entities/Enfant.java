@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package entities;
+package DietForKids.entities;
 
 /**
  *
@@ -15,15 +15,15 @@ public class Enfant {
     private String prenomEnfant;
     private int ageEnfant;
     private String sexeEnfant;
-    private float poidsEnfant;
-    private float tailleEnfant;
-    private float imcEnfant;
-    private float id_Parent_fk;
+    private double poidsEnfant;
+    private double tailleEnfant;
+    private double imcEnfant;
+    private int id_Parent_fk;
 
     public Enfant() {
     }
 
-    public Enfant(int idEnfant_pk, String nomEnfant, String prenomEnfant, int ageEnfant, String sexeEnfant, float poidsEnfant, float tailleEnfant, float imcEnfant, int id_Parent_fk) {
+    public Enfant(int idEnfant_pk, String nomEnfant, String prenomEnfant, int ageEnfant, String sexeEnfant, double poidsEnfant, double tailleEnfant, double imcEnfant, int id_Parent_fk) {
         this.idEnfant_pk = idEnfant_pk;
         this.nomEnfant = nomEnfant;
         this.prenomEnfant = prenomEnfant;
@@ -75,31 +75,31 @@ public class Enfant {
         this.sexeEnfant = sexeEnfant;
     }
 
-    public float getPoidsEnfant() {
+    public double getPoidsEnfant() {
         return poidsEnfant;
     }
 
-    public void setPoidsEnfant(float poidsEnfant) {
+    public void setPoidsEnfant(double poidsEnfant) {
         this.poidsEnfant = poidsEnfant;
     }
 
-    public float getTailleEnfant() {
+    public double getTailleEnfant() {
         return tailleEnfant;
     }
 
-    public void setTailleEnfant(float tailleEnfant) {
+    public void setTailleEnfant(double tailleEnfant) {
         this.tailleEnfant = tailleEnfant;
     }
 
-    public float getImcEnfant() {
+    public double getImcEnfant() {
         return imcEnfant;
     }
 
-    public void setImcEnfant(int imcEnfant) {
+    public void setImcEnfant(double imcEnfant) {
         this.imcEnfant = imcEnfant;
     }
 
-    public float getId_Parent_fk() {
+    public int getId_Parent_fk() {
         return id_Parent_fk;
     }
 

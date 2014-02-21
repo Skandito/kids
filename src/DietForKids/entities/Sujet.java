@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package entities;
+package DietForKids.entities;
 
 /**
  *
@@ -13,17 +13,17 @@ public class Sujet {
     private int idSujet_pk;
     private String titreSujet;
     private String contenuSujet;
-    private String etatString;
-    private String idParent_fk;
+    private String etatSujet;
+    private int idParent_fk;
 
     public Sujet() {
     }
 
-    public Sujet(int idSujet_pk, String titreSujet, String contenuSujet, String etatString, String idParent_fk) {
+    public Sujet(int idSujet_pk, String titreSujet, String contenuSujet, String etatSujet, int idParent_fk) {
         this.idSujet_pk = idSujet_pk;
         this.titreSujet = titreSujet;
         this.contenuSujet = contenuSujet;
-        this.etatString = etatString;
+        this.etatSujet = etatSujet;
         this.idParent_fk = idParent_fk;
     }
 
@@ -51,25 +51,25 @@ public class Sujet {
         this.contenuSujet = contenuSujet;
     }
 
-    public String getEtatString() {
-        return etatString;
+    public String getEtatSujet() {
+        return etatSujet;
     }
 
-    public void setEtatString(String etatString) {
-        this.etatString = etatString;
+    public void setEtatSujet(String etatSujet) {
+        this.etatSujet = etatSujet;
     }
 
-    public String getIdParent_fk() {
+    public int getIdParent_fk() {
         return idParent_fk;
     }
 
-    public void setIdParent_fk(String idParent_fk) {
+    public void setIdParent_fk(int idParent_fk) {
         this.idParent_fk = idParent_fk;
     }
 
     @Override
     public String toString() {
-        return "Sujet{" + "idSujet_pk=" + idSujet_pk + ", titreSujet=" + titreSujet + ", contenuSujet=" + contenuSujet + ", etatString=" + etatString + ", idParent_fk=" + idParent_fk + '}';
+        return "Sujet{" + "idSujet_pk=" + idSujet_pk + ", titreSujet=" + titreSujet + ", contenuSujet=" + contenuSujet + ", etatSujet=" + etatSujet + ", idParent_fk=" + idParent_fk + '}';
     }
     
 }

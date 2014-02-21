@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package entities;
+package DietForKids.entities;
 
 /**
  *
@@ -14,13 +14,13 @@ public class Repas {
     private String nomRepas;
     private String dateRepas;
     private String etatRepas;
-    private float nbrcalorieRepas;
+    private double nbrcalorieRepas;
     private int idEnfant_fk;
 
     public Repas() {
     }
 
-    public Repas(int idRepas_pk, String nomRepas, String dateRepas, String etatRepas, float nbrcalorieRepas, int idEnfant_fk) {
+    public Repas(int idRepas_pk, String nomRepas, String dateRepas, String etatRepas, double nbrcalorieRepas, int idEnfant_fk) {
         this.idRepas_pk = idRepas_pk;
         this.nomRepas = nomRepas;
         this.dateRepas = dateRepas;
@@ -61,11 +61,11 @@ public class Repas {
         this.etatRepas = etatRepas;
     }
 
-    public float getNbrcalorieRepas() {
+    public double getNbrcalorieRepas() {
         return nbrcalorieRepas;
     }
 
-    public void setNbrcalorieRepas(float nbrcalorieRepas) {
+    public void setNbrcalorieRepas(double nbrcalorieRepas) {
         this.nbrcalorieRepas = nbrcalorieRepas;
     }
 

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package entities;
+package DietForKids.entities;
 
 /**
  *
@@ -13,15 +13,15 @@ public class Formule {
     private int idFormule_pk;
     private String categorieFormule;
     private String contenuFormule;
-    private float nbrcalorieFormule;
-    private float imcFormule;
+    private double nbrcalorieFormule;
+    private double imcFormule;
     private String typeFormule;
     private int idEnfant_fk;
 
     public Formule() {
     }
 
-    public Formule(int idFormule_pk, String categorieFormule, String contenuFormule, float nbrcalorieFormule, float imcFormule, String typeFormule, int idEnfant_fk) {
+    public Formule(int idFormule_pk, String categorieFormule, String contenuFormule, double nbrcalorieFormule, double imcFormule, String typeFormule, int idEnfant_fk) {
         this.idFormule_pk = idFormule_pk;
         this.categorieFormule = categorieFormule;
         this.contenuFormule = contenuFormule;
@@ -55,19 +55,19 @@ public class Formule {
         this.contenuFormule = contenuFormule;
     }
 
-    public float getNbrcalorieFormule() {
+    public double getNbrcalorieFormule() {
         return nbrcalorieFormule;
     }
 
-    public void setNbrcalorieFormule(float nbrcalorieFormule) {
+    public void setNbrcalorieFormule(double nbrcalorieFormule) {
         this.nbrcalorieFormule = nbrcalorieFormule;
     }
 
-    public float getImcFormule() {
+    public double getImcFormule() {
         return imcFormule;
     }
 
-    public void setImcFormule(float imcFormule) {
+    public void setImcFormule(double imcFormule) {
         this.imcFormule = imcFormule;
     }
 

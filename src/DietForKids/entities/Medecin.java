@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package entities;
+package DietForKids.entities;
 
 /**
  *
@@ -13,17 +13,17 @@ public class Medecin {
     private int idMedecin_pk;
     private String nomMedecin;
     private String prenomMedecin;
-    private int codeMedecin;
+    private String codeMedecin;
     private String emailMedecin;
     private String addresseMedecin;
     private String loginMedecin;
     private String specialiteMedecin;
-    private String mdpParent;
+    private String mdpMedecin;
 
     public Medecin() {
     }
 
-    public Medecin(int idMedecin_pk, String nomMedecin, String prenomMedecin, int codeMedecin, String emailMedecin, String addresseMedecin, String loginMedecin, String specialiteMedecin, String mdpParent) {
+    public Medecin(int idMedecin_pk, String nomMedecin, String prenomMedecin, String codeMedecin, String emailMedecin, String addresseMedecin, String loginMedecin, String specialiteMedecin, String mdpMedecin) {
         this.idMedecin_pk = idMedecin_pk;
         this.nomMedecin = nomMedecin;
         this.prenomMedecin = prenomMedecin;
@@ -32,7 +32,7 @@ public class Medecin {
         this.addresseMedecin = addresseMedecin;
         this.loginMedecin = loginMedecin;
         this.specialiteMedecin = specialiteMedecin;
-        this.mdpParent = mdpParent;
+        this.mdpMedecin = mdpMedecin;
     }
 
     public int getIdMedecin_pk() {
@@ -59,11 +59,11 @@ public class Medecin {
         this.prenomMedecin = prenomMedecin;
     }
 
-    public int getCodeMedecin() {
+    public String getCodeMedecin() {
         return codeMedecin;
     }
 
-    public void setCodeMedecin(int codeMedecin) {
+    public void setCodeMedecin(String codeMedecin) {
         this.codeMedecin = codeMedecin;
     }
 
@@ -99,16 +99,16 @@ public class Medecin {
         this.specialiteMedecin = specialiteMedecin;
     }
 
-    public String getMdpParent() {
-        return mdpParent;
+    public String getMdpMedecin() {
+        return mdpMedecin;
     }
 
-    public void setMdpParent(String mdpParent) {
-        this.mdpParent = mdpParent;
+    public void setMdpMedecin(String mdpMedecin) {
+        this.mdpMedecin = mdpMedecin;
     }
 
     @Override
     public String toString() {
-        return "Medecin{" + "idMedecin_pk=" + idMedecin_pk + ", nomMedecin=" + nomMedecin + ", prenomMedecin=" + prenomMedecin + ", codeMedecin=" + codeMedecin + ", emailMedecin=" + emailMedecin + ", addresseMedecin=" + addresseMedecin + ", loginMedecin=" + loginMedecin + ", specialiteMedecin=" + specialiteMedecin + ", mdpParent=" + mdpParent + '}';
+        return "Medecin{" + "idMedecin_pk=" + idMedecin_pk + ", nomMedecin=" + nomMedecin + ", prenomMedecin=" + prenomMedecin + ", codeMedecin=" + codeMedecin + ", emailMedecin=" + emailMedecin + ", addresseMedecin=" + addresseMedecin + ", loginMedecin=" + loginMedecin + ", specialiteMedecin=" + specialiteMedecin + ", mdpMedecin=" + mdpMedecin+ '}';
     }
 }
